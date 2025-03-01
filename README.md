@@ -32,8 +32,8 @@ This repository accompanies the Topdemy YouTube channel, providing real-world ex
 ### ⚙️ Artisan Commands
 - [Artisan Commands](tips/artisan.md)
 
-### 📜 Logging & Debugging (3 tips)
+### 📜 Logging & Debugging
 - [Logging & Debugging](tips/log-debug.md)
 
-### 🔗 API Development (3 tips)
+### 🔗 API Development
 - [API Development](tips/api.md)
