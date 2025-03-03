@@ -13,3 +13,31 @@ DB::transaction(function () use ($request) {
     ]);
 });
 ```
+
+
+### 1. Using firstOrCreate()
+
+With `firstOrCreate()`, you can search for the first record matching specific attributes or create it if it doesn't exist.  
+
+
+```php
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\Category;
+use Illuminate\Http\Request;
+use Illuminate\Support\Str;
+
+class CategoryController extends Controller
+{
+    public function example(Request $request)
+    {
+        $category = Category::firstOrCreate(
+            ['name' => $request->name],
+            ['slug' => Str::slug($request->name)]
+        );
+
+        return $category;
+    }
+}
