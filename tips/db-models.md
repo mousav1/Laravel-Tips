@@ -1,4 +1,4 @@
-### Using DB Transactions
+### 1. Using DB Transactions
 
 DB transactions ensure that a series of database operations execute atomically—either all succeed or none do—maintaining data integrity.
 
@@ -15,7 +15,7 @@ DB::transaction(function () use ($request) {
 ```
 
 
-### 1. Using firstOrCreate()
+### 2. Using firstOrCreate()
 
 With `firstOrCreate()`, you can search for the first record matching specific attributes or create it if it doesn't exist.  
 
